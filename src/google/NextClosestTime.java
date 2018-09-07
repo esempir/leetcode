@@ -21,8 +21,7 @@ public class NextClosestTime {
         num[3] = time.charAt(4) - '0';
         set.add(num[3]);
 
-        int[] arr = new int[]{-1, -1, -1, -1};
-        dfs(num, arr, 0, set);
+        dfs(num, new int[4], 0, set);
 
         if (res == null) {
             return time;

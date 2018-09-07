@@ -5,10 +5,11 @@ package google;
  */
 public class MainApp {
     public static void main(String args[]) {
-        NextClosestTime nextClosestTime = new NextClosestTime();
+        TheMaze test = new TheMaze();
 
-        System.out.println(nextClosestTime.nextClosestTime("19:34"));
+        int[][] matrix = {{0,0,1,0,0}, {0,0,0,0,0}, {0,0,0,1,0}, {1,1,0,1,1}, {0,0,0,0,0}};
+        int[] start = {0,4};
+        int[] dest = {4,4};
+        System.out.println(test.hasPath(matrix, start, dest));
     }
 }
-
-
